@@ -1,21 +1,21 @@
 import unittest
-from src.math_lib import max, is_perfect
+from ..src.math_lib import find_max, is_perfect
 
 
 class TestMathLib(unittest.TestCase):
 
     # Testy dla max()
     def test_none_input(self):
-        self.assertIsNone(max(None))
+        self.assertIsNone(find_max(None))
 
     def test_empty_list(self):
-        self.assertIsNone(max([]))
+        self.assertIsNone(find_max([]))
 
     def test_single_element(self):
-        self.assertEqual(max([5]), 5)
+        self.assertEqual(find_max([5]), 5)
 
     def test_multiple_elements(self):
-        self.assertEqual(max([1, 3, 7, 2]), 7)
+        self.assertEqual(find_max([1, 3, 7, 2]), 7)
 
     # Testy dla is_perfect()
     def test_negative_number(self):
