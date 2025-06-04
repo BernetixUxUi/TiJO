@@ -1,4 +1,4 @@
-from src.math_lib import max, is_perfect
+from src.math_lib import find_max, is_perfect
 
 def test_max_none():
     # Arrange
